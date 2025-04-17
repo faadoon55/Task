@@ -1,0 +1,53 @@
+<ng-container *transloco="let t">
+<div class="body">
+
+  <div class="firstHalf"><img class="img1" src="../../../assets/first half login.png" alt=""></div>
+
+  <div class="secondHalf">
+
+    <div class="container1st">
+
+      <div class="container2ed">
+        <img class="img2" src="../../../assets/Package Logo 1.png" alt="">
+        <p class="logoName">{{ t('LOGIN.TITLE') }}</p>
+      </div>
+
+      <select class="language" (change)="switchLanguage($event)">
+        <option value="en">{{ t('LOGIN.English') }}</option>
+        <option value="ar">{{ t('LOGIN.Arabic') }}</option>
+      </select>
+
+    </div>
+
+
+
+    <div class="options">
+      <a class="a1"  routerLink="/auth/log-in">{{ t('LOGIN.Login') }}</a>
+      <a class="a2" routerLink="/auth/sign-up">{{ t('LOGIN.Sign up') }}</a>
+    </div>
+
+    <div class="container3th">
+
+      <label class="inputLabel" for="email">{{ t('LOGIN.Email') }}</label>
+      <input class="inputField" id="email" type="email" placeholder="{{ t('LOGIN.Email_Placeholder') }}" value="Name123@gmail.com"
+        required>
+
+      <label class="inputLabel" for="password">{{ t('LOGIN.Password') }}</label>
+      <input class="inputField" id="password" type="password" placeholder="{{ t('LOGIN.Email_Placeholder') }}" value="12345678"
+        required>
+
+      <button class="forgetButton" (click)="open(content)">{{ t('LOGIN.Forgot') }}</button>
+      <button class="loginButton">{{ t('LOGIN.Enter') }}</button>
+
+    </div>
+
+  <a class="whatsappLink" href="https://web.whatsapp.com/" target="_blank"><img class="img3" src="../../../assets/icons8-whatsapp-50.png" alt=""></a>
+
+  </div>
+
+</div>
+</ng-container>
+<ng-template #content let-modal>
+  <div class="pop-up">
+  </div>
+</ng-template>

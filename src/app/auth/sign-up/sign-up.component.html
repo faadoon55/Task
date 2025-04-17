@@ -1,0 +1,92 @@
+<ng-container *transloco="let t">
+<div class="body">
+
+  <div class="firstHalf"><img class="img1" src="../../../assets/first half login.png" alt=""></div>
+
+  <div class="secondHalf">
+
+    <div class="container1st">
+
+      <div class="container2ed">
+        <img class="img2" src="../../../assets/Package Logo 1.png">
+        <p class="logoName">{{ t('LOGIN.TITLE') }}</p>
+      </div>
+
+      <select class="language" (change)="switchLanguage($event)">
+        <option value="en">{{ t('LOGIN.English') }}</option>
+        <option value="ar">{{ t('LOGIN.Arabic') }}</option>
+      </select>
+
+    </div>
+
+    <div class="container3th">
+      <div class="container4th">
+        <a class="a2"  routerLink="/auth/log-in">{{ t('LOGIN.Login') }}</a>
+      <a class="a1" routerLink="/auth/sign-up">{{ t('LOGIN.Sign up') }}</a>
+      </div>
+    </div>
+
+    <div class="container5th">
+      <div class="container6th">
+        <div class="container7th">
+
+          <label class="inputLabel" for="fullName">{{ t('SIGNUP.Name') }}</label>
+          <input class="inputField" id="fullName" type="text" placeholder="Enter your Full name" value="Jaden Smith"
+            required>
+
+          <label class="inputLabel" for="Position">{{ t('SIGNUP.Position') }}</label>
+          <input class="inputField" id="Position" type="text" placeholder="Position" required>
+
+          <label class="inputLabel" for="password">{{ t('LOGIN.Password') }}</label>
+          <input class="inputField" id="password" type="password" placeholder="Enter your password" value="12345678"
+            required>
+
+        </div>
+
+        <div class="container8th">
+
+          <label class="inputLabel" for="email">{{ t('LOGIN.Email') }}</label>
+          <input class="inputField" id="email" type="email" placeholder="{{ t('LOGIN.Email_Placeholder') }}" value="Name123@gmail.com"
+            required>
+
+          <label class="inputLabel" for="MobileNumber">{{ t('SIGNUP.Mobile') }}</label>
+          <div class="keyNumberContainer">
+            <select class="key">
+              <option>+966</option>
+              <option>+987</option>
+              <option>+977</option>
+              <option>+971</option>
+            </select>
+            <input class="inputFieldNumber" id="MobileNumber" type="text" placeholder="Enter your Mobile Number"
+              required>
+          </div>
+
+          <label class="inputLabel" for="ConfirmPassword">{{ t('SIGNUP.Confirm') }}</label>
+          <input class="inputField" id="ConfirmPassword" type="password" placeholder="Enter your Confirm Password"
+            value="12345678" required>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container9th">
+      <input class="radio" type="radio" value="check">
+        <label class="label" for="check">{{ t('SIGNUP.By') }} <button class="PrivacyTerms" (click)="open(content)">{{ t('SIGNUP.Privacy') }}</button>{{ t('SIGNUP.and') }}
+        <button class="PrivacyTerms" (click)="open(content)">{{ t('SIGNUP.Terms') }}</button>{{ t('SIGNUP.of') }}</label>
+    </div>
+
+    <button class="loginButton">{{ t('SIGNUP.Register') }}</button>
+
+    <a class="whatsappLink" href="https://web.whatsapp.com/" target="_blank"><img class="img3"
+        src="../../../assets/icons8-whatsapp-50.png" alt=""></a>
+
+  </div>
+
+</div>
+</ng-container>
+
+<ng-template #content let-modal>
+  <div class="pop-up">
+  </div>
+</ng-template>

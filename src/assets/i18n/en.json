@@ -1,0 +1,36 @@
+{
+  "SIGNUP": {
+    "TITLE": "School Package",
+    "English": "English",
+    "Arabic": "Arabic",
+    "Login": "Login",
+    "Sign up": "Sign up",
+    "Name": "Full Name",
+    "Position": "Position",
+    "password": "password",
+    "Email": "Email",
+    "Mobile": "Mobile Number",
+    "Confirm": "Confirm Password",
+    "By": "By registering, you agree to the",
+    "Privacy": "Privacy Policy",
+    "and": "and",
+    "Terms": "Terms",
+    "of": "of Use.",
+    "Register": "Register",
+    "Email_Placeholder": "Enter your email",
+    "password_placeholder": "Enter your password"
+  },
+  "LOGIN": {
+    "TITLE": "School Package",
+    "English": "English",
+    "Arabic": "Arabic",
+    "Login": "Login",
+    "Sign up": "Sign up",
+    "Password": "password",
+    "Email": "Email",
+    "Forgot": "I Forgot my password",
+    "Enter": "Login",
+    "Email_Placeholder": "Enter your email",
+    "password_placeholder": "Enter your password"
+  }
+}
